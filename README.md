@@ -1,7 +1,7 @@
 # Frontend Mentor - Contact form
 
 ![Design preview for the Contact form coding challenge](./design/desktop-preview.jpg)
-#Live Site URL - https://matt2282.github.io/Contact-Form/
+## Live Site URL - https://matt2282.github.io/Contact-Form/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
