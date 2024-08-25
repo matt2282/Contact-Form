@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script defer src="main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Contact Us</header>
+      <br />
+      <form id="form">
+        <div class="first-last">
+          <div>
+            <label for="first-name"
+              ><div>First Name<span id="asterisk"> *</span></div></label
+            >
+            <input
+              type="text"
+              required
+              class="input-box"
+              id="first-name"
+              oninvalid="fieldRequiredError(event,id)"
+            />
+            <div class="error" id="first-name-error"></div>
+          </div>
+          <div>
+            <label for="last-name"
+              ><div>Last Name<span id="asterisk"> *</span></div></label
+            >
+            <input
+              type="text"
+              required
+              class="input-box"
+              id="last-name"
+              oninvalid="fieldRequiredError(event,id)"
+            />
+            <div class="error" id="last-name-error"></div>
+          </div>
+        </div>
+
+        <label for="email"
+          ><div>Email Address<span id="asterisk"> *</span></div></label
+        >
+        <input class="input-box" type="email" id="email" required />
+        <div class="error" id="email-error"></div>
+        <label for="query-type"
+          ><div>Query Type<span id="asterisk"> *</span></div></label
+        >
+        <div class="query-type">
+          <label
+            for="general-enquiry"
+            id="button1"
+            class="input-box"
+            style="justify-content: start"
+            ><input
+              class="radio-input"
+              required
+              id="general-enquiry"
+              type="radio"
+              name="query-type"
+              onclick="button1Select()"
+            />General Enquiry</label
+          >
+          <label
+            for="support-request"
+            id="button2"
+            class="input-box"
+            style="justify-content: start"
+            ><input
+              class="radio-input"
+              oninvalid="event.preventDefault()"
+              required
+              onclick="button2Select()"
+              id="support-request"
+              type="radio"
+              name="query-type"
+            />Support Request</label
+          >
+        </div>
+        <div class="error" id="query-type-error"></div>
+        <label for="message"
+          ><div>Message<span id="asterisk"> *</span></div></label
+        >
+        <textarea
+          class="input-box"
+          style="resize: none"
+          required
+          id="message"
+          oninvalid="fieldRequiredError(event,id)"
+        ></textarea>
+        <div class="error" id="message-error"></div>
+
+        <label id="consent"
+          ><input type="checkbox" id="checkbox" required style="width: 20px" />
+          <div>
+            I consent to being contacted by the team
+            <span id="asterisk"> *</span>
+          </div></label
+        >
+
+        <div class="error" id="consent-error"></div>
+
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+    </div>
+    <div class="success-message" style="display: none;">
+      <div><img src="assets/images/icon-success-check.svg" style="width: 15px; height: 15px;">Message Sent!</div>
+        Thanks for completing the formm. We'll be in touch soon!
+    </div>
+  </body>
+</html>
