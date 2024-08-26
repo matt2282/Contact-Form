@@ -47,6 +47,7 @@ submitButton.addEventListener("click", (e) => {
   }
   
 });
+
 function button1Select(){
   button1.style.backgroundColor=  "hsl(148, 38%, 91%)";
   button1.style.border= "solid 1.25px hsl(169, 82%, 27%)";

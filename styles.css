@@ -52,7 +52,8 @@ label #asterisk {
   border: solid 1.25px hsl(169, 82%, 27%);
   outline: none;
 }
-.query-type label, .query-type input{
+.query-type label,
+.query-type input {
   cursor: pointer;
 }
 #message {
@@ -93,25 +94,53 @@ label #asterisk {
 .error {
   color: red;
 }
-.success-message{
+.success-message {
   color: white;
   position: absolute;
   top: 15px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: auto;
   height: auto;
-  background-color: rgb(42,66,68);
+  background-color: rgb(42, 66, 68);
   padding: 1rem;
   font-weight: 200;
   font-size: 12px;
 }
-.success-message div{
+.success-message div {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 600;
-  font-size: .9rem;
-  margin-bottom: .5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+#checkbox {
+  margin: 0px;
+}
+#consent img {
+  display: none;
+}
+#checkbox:checked ~ img {
+  display: block;
+}
+#checkbox:checked {
+  display: none;
+}
+.query-type img{
+  display: none;
+}
+.radio-input:checked ~ img{
+  display: block;
+}
+.radio-input:checked{
+  display: none;
+}
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  
+  
 }
 
 @media only screen and (min-width: 770px) {
@@ -134,7 +163,7 @@ label #asterisk {
   #message {
     height: 125px;
   }
-  .success-message{
+  .success-message {
     top: 50px;
   }
 }

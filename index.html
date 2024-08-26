@@ -72,8 +72,11 @@
               type="radio"
               name="query-type"
               onclick="button1Select()"
-            />General Enquiry</label
+              
+            /><img src="assets/images/icon-radio-selected.svg">General Enquiry
+            </label
           >
+         
           <label
             for="support-request"
             id="button2"
@@ -87,7 +90,8 @@
               id="support-request"
               type="radio"
               name="query-type"
-            />Support Request</label
+             
+            /><img src="assets/images/icon-radio-selected.svg">Support Request</label
           >
         </div>
         <div class="error" id="query-type-error"></div>
@@ -104,21 +108,35 @@
         <div class="error" id="message-error"></div>
 
         <label id="consent"
-          ><input type="checkbox" id="checkbox" required style="width: 20px" />
+          ><input
+            type="checkbox"
+            id="checkbox"
+            required
+            style="width: 18px;"
+            
+          /><img
+            src="assets/images/icon-checkbox-check.svg"
+            alt=""
+          />
           <div>
             I consent to being contacted by the team
             <span id="asterisk"> *</span>
-          </div></label
-        >
+          </div>
+        </label>
 
         <div class="error" id="consent-error"></div>
 
         <button type="submit" id="submit-button">Submit</button>
       </form>
     </div>
-    <div class="success-message" style="display: none;">
-      <div><img src="assets/images/icon-success-check.svg" style="width: 15px; height: 15px;">Message Sent!</div>
-        Thanks for completing the formm. We'll be in touch soon!
+    <div class="success-message" style="display: none">
+      <div>
+        <img
+          src="assets/images/icon-success-check.svg"
+          style="width: 15px; height: 15px"
+        />Message Sent!
+      </div>
+      Thanks for completing the formm. We'll be in touch soon!
     </div>
   </body>
 </html>
