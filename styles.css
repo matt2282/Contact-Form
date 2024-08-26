@@ -137,10 +137,8 @@ label #asterisk {
 }
 input[type=radio] {
   width: 20px;
-  height: 20px;
+  height: 21px;
   margin: 0px;
-  
-  
 }
 
 @media only screen and (min-width: 770px) {
